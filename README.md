@@ -6,9 +6,9 @@
 
 ### Game
 
-id
-title
-bannerUrl
+    id
+    title
+    bannerUrl
 
 ### Ad
 
