@@ -12,16 +12,16 @@
 
 ### Ad
 
-id
-gameId
-name
-yearsPlaying
-discord
-weekdAys
-hourStart
-hourEnd
-useVoiceChannel
-createdAt
+    id
+    gameId
+    name
+    yearsPlaying
+    discord
+    weekdAys
+    hourStart
+    hourEnd
+    useVoiceChannel
+    createdAt
 
 ### Casos de uso
 
