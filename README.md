@@ -36,12 +36,29 @@
     npx prisma init --datasource-provider SQLite
     - Criar o molde com suas entidades
 
-```schema
-    model Game {
-        id          String @id
-        title       String
-        bannerUrl   String
-    }
+```JavaScript
+    
+model Game {
+  id        String @id @default(uuid())
+  title     String
+  bannerUrl String
+  Ads       Ad[]
+}
+
+model Ad {
+  id              String   @id @default(uuid())
+  gameId          String
+  name            String
+  yearsPlaying    Int
+  discord         String
+  weekDays        String
+  hourStart       Int
+  hourEnd         Int
+  useVoiceChannel Boolean
+  createdAt       DateTime @default(now())
+
+  game Game @relation(fields: [gameId], references: [id])
+}
 ```
 
 - Adicionar no arquivo settings.json od vsCode as sequites linhas
