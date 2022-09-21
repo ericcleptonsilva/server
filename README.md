@@ -72,3 +72,6 @@ model Ad {
 
 - criar o migrate e nomei o migration
  npx prisma migrate dev
+- instalar a depedência cors para permitir o acesso do serviços do back-end
+  npm i cors
+  npm i @types/cors -D
